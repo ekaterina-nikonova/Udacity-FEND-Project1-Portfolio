@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://use.fontawesome.com/a8d45aab04.js"></script>
+    <link rel="shortcut icon" href="img/icon.svg">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Android and Web Developer Portfolio</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row nav-row">
+        <nav class="navbar sticky-top navbar-toggleable-sm navbar-inverse w-100">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="navbar-brand">
+            <img class="d-block my-auto site-icon" src="img/icon.svg" alt="The letter E on a dark gradient backgroud">
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown mr-2 about-menu">
+                <a  class="nav-link dropdown-toggle" href="#" id="navbarDdMenuLinkAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDdMenuLinkAbout">
+                  <a class="dropdown-item" href="about-me.html">About me</a>
+                  <a class="dropdown-item" href="about-site.html">About this site</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDdMenuLinkContact" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact me</a>
+                <div class="dropdown-menu px-2 mb-2 contact-form" aria-labelledby="navbarDdMenuLinkContact">
+                  <form>
+                    <div class="form-group">
+                      <label class="sr-only" for="sender-name">Your name</label>
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <span class="fa fa-user-o"></span>
+                        </div>
+                        <input type="text" class="form-control" id="sender-name" placeholder="Your name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="email-address">Your email address</label>
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <span class="fa fa-envelope-o"></span>
+                        </div>
+                        <input type="email" class="form-control" id="email-address" placeholder="Your email address">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="msg-subject">Subject</label>
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <span class="fa fa-question-circle-o"></span>
+                        </div>
+                        <input type="text" class="form-control" id="msg-subject" placeholder="Subject">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="msg-text">Message</label>
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <span class="fa fa-pencil-square-o"></span>
+                        </div>
+                        <textarea class="form-control" id="msg-text" rows="9" cols="80" placeholder="Message&hellip;"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label id="fileHelp" class="sr-only" for="attach-file">Attach a file</label>
+                      <div class="input-group">
+                        <div class="input-group-addon py-1">
+                          <span class="fa fa-paperclip"></span>
+                        </div>
+                        <input type="file" class="form-control-file attach" id="attach-file" aria-describedby="fileHelp">
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-warning">Send <span class="fa fa-arrow-circle-right"></span></button>
+                  </form>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline" action="index.html" method="post">
+              <div class="form-group">
+                <label class="sr-only" for="search-box">Search on this site</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <span class="fa fa-search"></span>
+                  </div>
+                  <input class="form-control" id="search-box" type="text" name="Search" placeholder="e.g. Java or Git">
+                  <button class="btn btn-outline-warning mx-2" type="submit" name="Search"><span>Search</span></button>
+                </div>
+
+              </div>
+            </form>
+            <a href="resume.pdf" class="btn btn-outline-warning my-md-auto my-sm-2" name="Download" data-toggle="tooltip" data-placement="bottom" title="Download my resume"><span class="fa fa-download" aria-hidden="true"></span></a>
+          </div>
+        </nav>
+      </div>
+        <div class="row main-row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 d-sm-flex d-lg-inline-block my-auto py-4 col-intro">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 my-auto col-my-photo">
+                <picture>
+                  <source media="(max-width: 575px)" sizes="50vw" srcset="img/userpic-blue-150.jpg 150w, img/userpic-blue-300.jpg 300w">
+                  <source media="(min-width: 576px)" sizes="25vw" srcset="img/userpic-blue-150.jpg 150w, img/userpic-blue-300.jpg 300w, img/userpic-theatre-500.jpeg 500w, img/userpic-theatre-700.jpeg 700w">
+                  <img class="img-fluid d-block rounded-circle mx-auto my-4 userpic" src="img/userpic-blue-300.jpg" sizes="(max-width: 575px) 50vw, 25vw" srcset="img/userpic-blue-150.jpg 150w, img/userpic-blue-300.jpg 300w, img/userpic-theatre-500.jpeg 500w, img/userpic-theatre-700.jpeg 700w" alt="A photo of me">
+                </picture>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 my-auto col-whoami">
+                <h1 class="text-uppercase text-center">Ekaterina Nikonova</h1>
+                <h2 class="text-center lead">Android- and web-developer in Norway</h2>
+                <div class="nav mt-5 social-icons">
+                  <a href="https://www.facebook.com/ekaterina.v.nikonova" class="social-button mx-auto" aria-label="Open my Facebook page"><span class="fa fa-facebook-official fa-2x" aria-hidden="true"></span></a>
+                  <a href="https://www.linkedin.com/in/ekaterinanikonova/" class="social-button mx-auto" aria-label="Open my LinkedIn profile"><span class="fa fa-linkedin-square fa-2x" aria-hidden="true"></span></a>
+                  <a href="https://github.com/ekaterina-nikonova" class="social-button mx-auto" aria-label="Open my GitHub profile"><span class="fa fa-github fa-2x" aria-hidden="true"></span></a>
+                  <a href="https://www.instagram.com/ekaterina_v_nikonova/" class="social-button mx-auto" aria-label="Open my Instagram"><span class="fa fa-instagram fa-2x" aria-hidden="true"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 py-auto featured-column">
+              <div class="col-md-12 text-center pt-4 pb-2 featured-header">
+                <h3>Featured projects</h3>
+              </div>
+              <div class="row featured-panel" role="tabpanel">
+                <ul class="nav" id="android-web-tabs" role="tablist">
+                  <li class="nav-item wa-tab"><a class="nav-link active wa-link" data-toggle="tab" href="#android" role="tab">Android</a></li>
+                  <li class="nav-item wa-tab"><a class="nav-link wa-link" data-toggle="tab" href="#web" role="tab">Web</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane h-100 fade show active" id="android" role="tabpanel">
+                    <div id="android-carousel" class="carousel h-md-75 my-auto slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#android-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#android-carousel" data-slide-to="1"></li>
+                        <li data-target="#android-carousel" data-slide-to="2"></li>
+                      </ol>
+                      <div class="android-carousel-inner carousel-inner h-100" role="listbox">
+                        <div class="carousel-item active">
+                          <div class="card w-75 mt-5 mx-auto">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <picture>
+                                  <source media="(max-width: 575px)" sizes="75vw" srcset="img/icon-mockpaint-200.jpg 200w, img/icon-mockpaint-300.jpg 300w, img/icon-mockpaint-500.jpg 500w">
+                                  <img class="d-block img-fluid mx-auto my-4 icon-img" src="img/icon-mockpaint-500.jpg" sizes="(max-width: 991px) 33vw, 25vw" srcset="img/icon-mockpaint-200.jpg 200w, img/icon-mockpaint-300.jpg 300w, img/icon-mockpaint-500.jpg 500w, img/icon-mockpaint-750.jpg 750w, img/icon-mockpaint-1000.jpg 1000w" alt="Mock Paint Android app icon">
+                                </picture>
+                              </div>
+                              <div class="col-sm-6 pl-sm-0">
+                                <div class="card-block pl-sm-0">
+                                  <h4 class="card-title">Mock Paint</h4>
+                                  <p class="card-text">Android mockup tool for creating graphic assets quickly.</p>
+                                  <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#mockpaint-modal">Learn more</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card w-75 mt-5 mx-auto">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <picture>
+                                  <source media="(max-width: 575px)" sizes="75vw" srcset="img/icon-advisor-200.jpg 200w, img/icon-advisor-300.jpg 300w, img/icon-advisor-500.jpg 500w">
+                                  <img class="d-block img-fluid mx-auto my-4 icon-img" src="img/icon-advisor-500.jpg" sizes="(max-width: 991px) 33vw, 25vw" srcset="img/icon-advisor-200.jpg 200w, img/icon-advisor-300.jpg 300w, img/icon-advisor-500.jpg 500w, img/icon-advisor-750.jpg 750w, img/icon-advisor-1000.jpg 1000w" alt="Career Advisor Android app icon">
+                                </picture>
+                              </div>
+                              <div class="col-sm-6 pl-sm-0">
+                                <div class="card-block pl-sm-0">
+                                  <h4 class="card-title">Career Advisor</h4>
+                                  <p class="card-text">An app for finding online courses that match your desirable job.</p>
+                                  <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#advisor-modal">Learn more</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card w-75 mt-5 mx-auto">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <picture>
+                                  <source media="(max-width: 575px)" sizes="75vw" srcset="img/icon-hae-200.jpg 200w, img/icon-hae-300.jpg 300w, img/icon-hae-500.jpg 500w">
+                                  <img class="d-block img-fluid mx-auto my-4 icon-img" src="img/icon-hae-500.jpg" sizes="(max-width: 991px) 33vw, 25vw" srcset="img/icon-hae-200.jpg 200w, img/icon-hae-300.jpg 300w, img/icon-hae-500.jpg 500w, img/icon-hae-750.jpg 750w, img/icon-hae-1000.jpg 1000w" alt="Audio analyzer Android app icon">
+                                </picture>
+                              </div>
+                              <div class="col-sm-6 pl-sm-0">
+                                <div class="card-block pl-sm-0">
+                                  <h4 class="card-title">Haeae?</h4>
+                                  <p class="card-text">Pronunciation aid for foreign language learners.</p>
+                                  <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#hae-modal">Learn more</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#android-carousel" role="button" data-slide="prev">
+                        <span class="control-icon carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#android-carousel" role="button" data-slide="next">
+                        <span class="control-icon carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="tab-pane h-100 fade" id="web" role="tabpanel">
+                    <div id="web-carousel" class="carousel h-md-75 slide" data-ride="carousel" data-interval="8000">
+                      <ol class="carousel-indicators">
+                        <li data-target="#web-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#web-carousel" data-slide-to="1"></li>
+                        <li data-target="#web-carousel" data-slide-to="2"></li>
+                        <li data-target="#web-carousel" data-slide-to="3"></li>
+                      </ol>
+                      <div class="web-carousel-inner carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <div class="card w-75 mt-4 mx-auto">
+                            <picture>
+                              <source media="(min-width: 576px) and (max-width: 991px) and (max-aspect-ratio: 10/16), (min-width: 992px) and (max-aspect-ratio: 4/3)" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/square-resume-500.jpg 500w, img/square-resume-800.jpg 800w, img/square-resume-1000.jpg 1000w, img/square-resume-1200.jpg 1200w, img/square-resume-1600.jpg 1600w">
+                              <source media="(min-width: 576px) and (min-aspect-ratio: 3/2)" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/wide-resume-320.jpg 320w, img/wide-resume-560.jpg 560w, img/wide-resume-800.jpg 800w, img/wide-resume-1120.jpg 1120w, img/wide-resume-1600.jpg 1600w">
+                              <img class="d-block img-fluid screenshot-img" src="img/site-resume-800.jpg" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/site-resume-400.jpg 400w, img/site-resume-600.jpg 600w, img/site-resume-800.jpg 800w, img/site-resume-1200.jpg 1200w, img/site-resume-1600.jpg 1600w" alt="Interactive resume website">
+                            </picture>
+                            <div class="card-block card-img-overlay">
+                              <h4 class="card-title">Online Resume</h4>
+                              <p class="card-text">My interactive online resume built for the Udacity Front-End Development Nanodegree.</p>
+                              <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#resume-modal">Learn more</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card w-75 mt-4 mx-auto">
+                            <picture>
+                              <source media="(min-width: 576px) and (max-width: 991px) and (max-aspect-ratio: 10/16), (min-width: 992px) and (max-aspect-ratio: 4/3)" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/square-arcade-500.jpg 500w, img/square-arcade-800.jpg 800w, img/square-arcade-1000.jpg 1000w, img/square-arcade-1200.jpg 1200w, img/square-arcade-1600.jpg 1600w">
+                              <source media="(min-width: 576px) and (min-aspect-ratio: 3/2)" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/wide-arcade-320.jpg 320w, img/wide-arcade-560.jpg 560w, img/wide-arcade-800.jpg 800w, img/wide-arcade-1120.jpg 1120w, img/wide-arcade-1600.jpg 1600w">
+                              <img class="d-block img-fluid screenshot-img" src="img/site-arcade-800.jpg" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/site-arcade-400.jpg 400w, img/site-arcade-600.jpg 600w, img/site-arcade-800.jpg 800w, img/site-arcade-1200.jpg 1200w, img/site-arcade-1600.jpg 1600w" alt="Arcade game website">
+                            </picture>
+                            <div class="card-block card-img-overlay">
+                              <h4 class="card-title">Arcade game</h4>
+                              <p class="card-text">A web-implementation of a classic arcade game built for the Udacity Front-End Web Development Nanodegree.</p>
+                              <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#arcade-modal">Learn more</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card w-75 mt-4 mx-auto">
+                            <picture>
+                              <source media="(min-width: 576px) and (max-width: 991px) and (max-aspect-ratio: 10/16), (min-width: 992px) and (max-aspect-ratio: 4/3)" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/square-testing-500.jpg 500w, img/square-testing-800.jpg 800w, img/square-testing-1000.jpg 1000w, img/square-testing-1200.jpg 1200w, img/square-testing-1600.jpg 1600w">
+                              <source media="(min-width: 576px) and (min-aspect-ratio: 3/2)" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/wide-testing-320.jpg 320w, img/wide-testing-560.jpg 560w, img/wide-testing-800.jpg 800w, img/wide-testing-1120.jpg 1120w, img/wide-testing-1600.jpg 1600w">
+                              <img class="d-block img-fluid screenshot-img" src="img/site-testing-800.jpg" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/site-testing-400.jpg 400w, img/site-testing-600.jpg 600w, img/site-testing-800.jpg 800w, img/site-testing-1200.jpg 1200w, img/site-testing-1600.jpg 1600w" alt="Feed reader testing website">
+                            </picture>
+                            <div class="card-block card-img-overlay">
+                              <h4 class="card-title">Feed reader testing</h4>
+                              <p class="card-text">A feed reader testing website built for the Udacity Front-End Web Development Nanodegree.</p>
+                              <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#testing-modal">Learn more</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card w-75 mt-4 mx-auto">
+                            <picture>
+                              <source media="(min-width: 576px) and (max-width: 991px) and (max-aspect-ratio: 10/16), (min-width: 992px) and (max-aspect-ratio: 4/3)" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/square-health-500.jpg 500w, img/square-health-800.jpg 800w, img/square-health-1000.jpg 1000w, img/square-health-1200.jpg 1200w, img/square-health-1600.jpg 1600w">
+                              <source media="(min-width: 576px) and (min-aspect-ratio: 3/2)" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/wide-health-320.jpg 320w, img/wide-health-560.jpg 560w, img/wide-health-800.jpg 800w, img/wide-health-1120.jpg 1120w, img/wide-health-1600.jpg 1600w">
+                              <img class="d-block img-fluid screenshot-img" src="img/site-health-800.jpg" sizes="(max-width: 991px) 75vw, 50vw" srcset="img/site-health-400.jpg 400w, img/site-health-600.jpg 600w, img/site-health-800.jpg 800w, img/site-health-1200.jpg 1200w, img/site-health-1600.jpg 1600w" alt="Health tracker website">
+                            </picture>
+                            <div class="card-block card-img-overlay">
+                              <h4 class="card-title">Health Tracker</h4>
+                              <p class="card-text">A health tracking website built for the Udacity Front-End Web Development Nanodegree.</p>
+                              <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#health-modal">Learn more</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#web-carousel" role="button" data-slide="prev">
+                        <span class="control-icon carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#web-carousel" role="button" data-slide="next">
+                        <span class="control-icon carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for the carousels items -->
+    <!-- Android modals -->
+    <div class="modal fade" id="mockpaint-modal" tabindex="-1" role="dialog" aria-labelledby="mockpaint-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="article">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mockpaint-modal-label">Mock Paint - Android app</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body d-flex flex-wrap">
+            <div class="container">
+              <div class="row d-block">
+                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-android-pic">
+                  <picture>
+                    <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/mobile-mockpaint-300.jpg 300w, img/mobile-mockpaint-500.jpg 500w, img/mobile-mockpaint-800.jpg 800w">
+                    <source sizes="(max-width: 767px) 75vw, 25vw" srcset="img/mobile-mockpaint-300.jpg 300w, img/mobile-mockpaint-500.jpg 500w, img/mobile-mockpaint-800.jpg 800w, img/mobile-mockpaint-1100.jpg 1100w, img/mobile-mockpaint-1600.jpg 1600w">
+                    <img class="img-fluid d-block mx-auto my-auto" src="img/mobile-mockpaint-800.jpg" sizes="(max-width: 767px) 75vw, 33vw" srcset="img/mobile-mockpaint-300.jpg 300w, img/mobile-mockpaint-500.jpg 500w, img/mobile-mockpaint-800.jpg 800w, img/mobile-mockpaint-1100.jpg 1100w, img/mobile-mockpaint-1600.jpg 1600w" alt="Mock Paint screenshot">
+                  </picture>
+                </div>
+                <div class="modal-android-description">
+                  <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this app</h6>
+                  <p class="modal-body-text">Mock Paint is a graphic tool for Android developers. It allows you to create mockup graphic assets, such as icons and images, for your prototypes quickly and easily.</p>
+                </div>
+                <div class="modal-android-tools">
+                  <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
+                  <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Java</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Camera API</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Google Services</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">SQLite</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Google Drive API</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Google Search API</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-warning" data-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="advisor-modal" tabindex="-1" role="dialog" aria-labelledby="advisor-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="article">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="advisor-modal-label">Career Advisor - Android app</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body d-flex flex-wrap">
+            <div class="container">
+              <div class="row d-block">
+                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-android-pic">
+                  <picture>
+                    <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/mobile-advisor-300.jpg 300w, img/mobile-advisor-500.jpg 500w, img/mobile-advisor-800.jpg 800w">
+                    <source sizes="(max-width: 767px) 75vw, 25vw" srcset="img/mobile-advisor-300.jpg 300w, img/mobile-advisor-500.jpg 500w, img/mobile-advisor-800.jpg 800w, img/mobile-advisor-1100.jpg 1100w, img/mobile-advisor-1600.jpg 1600w">
+                    <img class="img-fluid d-block mx-auto my-auto" src="img/mobile-advisor-800.jpg" sizes="(max-width: 767px) 75vw, 33vw" srcset="img/mobile-advisor-300.jpg 300w, img/mobile-advisor-500.jpg 500w, img/mobile-advisor-800.jpg 800w, img/mobile-advisor-1100.jpg 1100w, img/mobile-advisor-1600.jpg 1600w" alt="Career Advisor screenshot">
+                  </picture>
+                </div>
+                <div class="modal-android-description">
+                  <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this app</h6>
+                  <p class="modal-body-text">Career Advisor scans job descriptions across numerous websites and finds online-courses that match your desirable career path.</p>
+                </div>
+                <div class="modal-android-tools">
+                  <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
+                  <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Java</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Calendar Provider</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Google Services</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">SQLite</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">ICU4J</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Google Search API</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-warning" data-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="hae-modal" tabindex="-1" role="dialog" aria-labelledby="hae-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="article">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="hae-modal-label">HÆÆ? - Android app</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body d-flex flex-wrap">
+            <div class="container">
+              <div class="row d-block">
+                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-android-pic">
+                  <picture>
+                    <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/mobile-hae-300.jpg 300w, img/mobile-hae-500.jpg 500w, img/mobile-hae-800.jpg 800w">
+                    <source sizes="(max-width: 767px) 75vw, 25vw" srcset="img/mobile-hae-300.jpg 300w, img/mobile-hae-500.jpg 500w, img/mobile-hae-800.jpg 800w, img/mobile-hae-1100.jpg 1100w, img/mobile-hae-1600.jpg 1600w">
+                    <img class="img-fluid d-block mx-auto my-auto" src="img/mobile-hae-800.jpg" sizes="(max-width: 767px) 75vw, 33vw" srcset="img/mobile-hae-300.jpg 300w, img/mobile-hae-500.jpg 500w, img/mobile-hae-800.jpg 800w, img/mobile-hae-1100.jpg 1100w, img/mobile-hae-1600.jpg 1600w" alt="Audio analyzer screenshot">
+                  </picture>
+                </div>
+                <div class="modal-android-description">
+                  <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this app</h6>
+                  <p class="modal-body-text">This app helps language learners improve their pronunciation. Listen to the audio sample and repeat, and the app will tell you how much your utterance resembles the original.</p>
+                </div>
+                <div class="modal-android-tools">
+                  <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
+                  <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Java</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Media Browser</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">WebView</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">SQLite</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">MediaRecorder</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Widgets</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-warning" data-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web modals -->
+    <div class="modal fade" id="resume-modal" tabindex="-1" role="dialog" aria-labelledby="resume-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="article">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="resume-modal-label">Interactive online resume</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body d-flex flex-wrap">
+            <div class="container">
+              <div class="row d-block">
+                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-web-pic">
+                  <picture>
+                    <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/site-resume-400.jpg 400w, img/site-resume-600.jpg 600w, img/site-resume-800.jpg 800w">
+                    <source sizes="(max-width: 767px) 75vw, 50vw" srcset="img/site-resume-400.jpg 400w, img/site-resume-600.jpg 600w, img/site-resume-800.jpg 800w, img/site-resume-1200.jpg 1200w, img/site-resume-1600.jpg 1600w">
+                    <img class="img-fluid d-block mx-auto my-auto" src="img/site-resume-800.jpg" sizes="(max-width: 767px) 75vw, 50vw" srcset="img/site-resume-400.jpg 400w, img/site-resume-600.jpg 600w, img/site-resume-800.jpg 800w, img/site-resume-1200.jpg 1200w, img/site-resume-1600.jpg 1600w" alt="Resume website screenshot">
+                  </picture>
+                </div>
+                <div class="modal-web-description">
+                  <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this project</h6>
+                  <p class="modal-body-text">An interactive online resume built for the Udacity Front-End Web-Development Nanodegree. It uses Google Maps to show my locations and Polymer 2.0 for custom components.</p>
+                </div>
+                <div class="modal-web-tools">
+                  <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
+                  <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">HTML5</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">CSS3</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">JavaScript</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">GitHub</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Google Maps API</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">jQuery</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-warning" data-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="arcade-modal" tabindex="-1" role="dialog" aria-labelledby="arcade-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="article">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="arcade-modal-label">Arcade game Frogger</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body d-flex flex-wrap">
+            <div class="container">
+              <div class="row d-block">
+                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-web-pic">
+                  <picture>
+                    <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/site-arcade-400.jpg 400w, img/site-arcade-600.jpg 600w, img/site-arcade-800.jpg 800w">
+                    <source sizes="(max-width: 767px) 75vw, 50vw" srcset="img/site-arcade-400.jpg 400w, img/site-arcade-600.jpg 600w, img/site-arcade-800.jpg 800w, img/site-arcade-1200.jpg 1200w, img/site-arcade-1600.jpg 1600w">
+                    <img class="img-fluid d-block mx-auto my-auto" src="img/site-arcade-800.jpg" sizes="(max-width: 767px) 75vw, 50vw" srcset="img/site-arcade-400.jpg 400w, img/site-arcade-600.jpg 600w, img/site-arcade-800.jpg 800w, img/site-arcade-1200.jpg 1200w, img/site-arcade-1600.jpg 1600w" alt="Arcade game screenshot">
+                  </picture>
+                </div>
+                <div class="modal-web-description">
+                  <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this project</h6>
+                  <p class="modal-body-text">An web version of a classical arcade game Frogger built for the Udacity Front-End Web-Development Nanodegree. The <a href="https://github.com/udacity/frontend-nanodegree-arcade-game">game engine</a> provided by Udacity was customized, new levels and character were added.</p>
+                </div>
+                <div class="modal-web-tools">
+                  <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
+                  <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">HTML5</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">CSS3</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">JavaScript</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">GitHub</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Engine.js</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">HTML Canvas</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-warning" data-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="testing-modal" tabindex="-1" role="dialog" aria-labelledby="testing-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="article">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="testing-modal-label">Feed reader testing</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body d-flex flex-wrap">
+            <div class="container">
+              <div class="row d-block">
+                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-web-pic">
+                  <picture>
+                    <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/site-testing-400.jpg 400w, img/site-testing-600.jpg 600w, img/site-testing-800.jpg 800w">
+                    <source sizes="(max-width: 767px) 75vw, 50vw" srcset="img/site-testing-400.jpg 400w, img/site-testing-600.jpg 600w, img/site-testing-800.jpg 800w, img/site-testing-1200.jpg 1200w, img/site-testing-1600.jpg 1600w">
+                    <img class="img-fluid d-block mx-auto my-auto" src="img/site-testing-800.jpg" sizes="(max-width: 767px) 75vw, 50vw" srcset="img/site-testing-400.jpg 400w, img/site-testing-600.jpg 600w, img/site-testing-800.jpg 800w, img/site-testing-1200.jpg 1200w, img/site-testing-1600.jpg 1600w" alt="Feed reader testing">
+                  </picture>
+                </div>
+                <div class="modal-web-description">
+                  <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this project</h6>
+                  <p class="modal-body-text">A test suite for a web-based application that reads RSS feeds. All tests are written using Jasmine framework.</p>
+                </div>
+                <div class="modal-web-tools">
+                  <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
+                  <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">HTML5</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">CSS3</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">JavaScript</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">GitHub</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Jasmine</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-warning" data-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="health-modal" tabindex="-1" role="dialog" aria-labelledby="health-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="article">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="health-modal-label">Interactive online resume</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body d-flex flex-wrap">
+            <div class="container">
+              <div class="row d-block">
+                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-web-pic">
+                  <picture>
+                    <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/site-health-400.jpg 400w, img/site-health-600.jpg 600w, img/site-health-800.jpg 800w">
+                    <source sizes="(max-width: 767px) 75vw, 50vw" srcset="img/site-health-400.jpg 400w, img/site-health-600.jpg 600w, img/site-health-800.jpg 800w, img/site-health-1200.jpg 1200w, img/site-health-1600.jpg 1600w">
+                    <img class="img-fluid d-block mx-auto my-auto" src="img/site-health-800.jpg" sizes="(max-width: 767px) 75vw, 50vw" srcset="img/site-health-400.jpg 400w, img/site-health-600.jpg 600w, img/site-health-800.jpg 800w, img/site-health-1200.jpg 1200w, img/site-health-1600.jpg 1600w" alt="Resume website screenshot">
+                  </picture>
+                </div>
+                <div class="modal-web-description">
+                  <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this project</h6>
+                  <p class="modal-body-text">A web app that helps you track daily calories and water intake. It also registers how many steps you have made daily, weekly or monthly and allows you to customize types of physical activity.</p>
+                </div>
+                <div class="modal-web-tools">
+                  <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
+                  <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">HTML5</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">CSS3</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">JavaScript</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">GitHub</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Backbone</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Firebase</button>
+                    <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Nutritionix</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-warning" data-dismiss="modal" aria-label="Close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
