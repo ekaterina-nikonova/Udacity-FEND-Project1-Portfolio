@@ -10,49 +10,37 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="38.099995mm"
-   height="38.099995mm"
-   viewBox="0 0 38.099995 38.099995"
+   width="199.99998"
+   height="199.99998"
+   viewBox="0 0 52.916661 52.916664"
    version="1.1"
-   id="svg9945"
+   id="svg8"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="site-icon.svg">
+   sodipodi:docname="icon.svg">
   <defs
-     id="defs9939">
+     id="defs2">
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient8549"
-       id="linearGradient9937"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.12857142,0,0,0.12857142,-132.29153,64.534565)"
-       x1="1206.5"
-       y1="-475.58334"
-       x2="1206.5"
-       y2="-179.25" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient8549">
+       id="linearGradient4493">
       <stop
-         style="stop-color:#071212;stop-opacity:1"
+         style="stop-color:#000000;stop-opacity:1;"
          offset="0"
-         id="stop8545" />
+         id="stop4489" />
       <stop
-         id="stop8557"
-         offset="0.30641675"
-         style="stop-color:#181f3d;stop-opacity:1" />
-      <stop
-         style="stop-color:#381441;stop-opacity:1"
-         offset="0.75170547"
-         id="stop8559" />
-      <stop
-         id="stop8565"
-         offset="0.88453221"
-         style="stop-color:#672121;stop-opacity:1" />
-      <stop
-         style="stop-color:#ae7f00;stop-opacity:1"
+         style="stop-color:#550000;stop-opacity:1"
          offset="1"
-         id="stop8547" />
+         id="stop4491" />
     </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4493"
+       id="linearGradient4495"
+       x1="31.75"
+       y1="16.541666"
+       x2="31.75"
+       y2="48.291668"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(59.531251,89.95833)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -61,10 +49,10 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-677.14286"
-     inkscape:cy="-520.00004"
-     inkscape:document-units="mm"
+     inkscape:zoom="1.6935683"
+     inkscape:cx="-35.703379"
+     inkscape:cy="102.99012"
+     inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
@@ -72,19 +60,26 @@
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
+     units="px"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4485"
+       originx="-64.82292"
+       originy="-148.16666" />
+  </sodipodi:namedview>
   <metadata
-     id="metadata9942">
+     id="metadata5">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -92,31 +87,19 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-3.7797618,-3.3880892)">
+     transform="translate(-64.822922,-95.916672)">
     <rect
-       style="fill:url(#linearGradient9937);fill-opacity:1;stroke:none;stroke-width:0.51026779;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect8543"
-       width="38.099995"
-       height="38.099995"
-       x="3.7797618"
-       y="3.3880892"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"
-       inkscape:export-filename="C:\Users\Ekate\OneDrive\Udacity Front-End Web Development\Project 1 - Portfolio (BS4)\img\icon.png" />
-    <g
-       aria-label="E"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:313.2666626px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;fill:#efefef;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       id="text8563"
-       transform="matrix(0.12857142,0,0,0.12857142,-132.54478,63.875005)"
-       inkscape:export-filename="C:\Users\Ekate\OneDrive\Udacity Front-End Web Development\Project 1 - Portfolio (BS4)\img\icon.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
-      <path
-         inkscape:connector-curvature="0"
-         d="m 1262.1589,-351.40735 h -104.1673 v 124.56878 h 119.7695 v 15.90807 h -138.5838 v -222.71301 h 137.819 v 16.06103 h -119.0047 v 50.26706 h 104.1673 z"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:313.2666626px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';fill:#efefef;fill-opacity:1;stroke-width:0.26458332"
-         id="path8567"
-         sodipodi:nodetypes="ccccccccccccc" />
-    </g>
+       style="fill:url(#linearGradient4495);fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4487"
+       width="52.916664"
+       height="52.916664"
+       x="64.822922"
+       y="95.916672" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 76.729172,107.82292 v 29.10416 h 29.104168 v -2.64583 H 79.375006 v -14.55208 h 26.458334 v -2.64583 H 79.375006 v -6.61459 h 26.458334 v -2.64583 z"
+       id="path4497"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccc" />
   </g>
 </svg>

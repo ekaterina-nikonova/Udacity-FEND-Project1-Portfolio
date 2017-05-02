@@ -1,0 +1,59 @@
+* {
+  color: #444;
+  font: 400 1rem "Roboto", sans-serif;
+  line-height: 1.5rem;
+}
+
+body {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #34b;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  color: #449;
+  font: 300 2rem "Roboto", sans-serif;
+}
+
+h2 {
+  color: #449;
+  font: 400 1.5rem "Roboto", sans-serif;
+}
+
+strong {
+  font-weight: bold;
+  color: #555;
+  line-height: 2rem;
+}
+
+li {
+  list-style-type: circle;
+}
+
+.footer-links {
+  height: 3rem;
+  float: left;
+}
+
+.copyright {
+  height: 3rem;
+  float: right;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
