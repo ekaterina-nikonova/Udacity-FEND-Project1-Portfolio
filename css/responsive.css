@@ -22,6 +22,54 @@ html {
 
 @media screen and (min-width: 2000px) {
   html {
-    font-size: 36px; 
+    font-size: 36px;
+  }
+}
+
+/* On large vertical displays the featured-column wraps even if the viewport is still "lg" or "xl". */
+
+@media screen and (min-width: 992px) and (max-aspect-ratio: 6/5) {
+  .col-intro {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex !important;
+  }
+
+  .featured-column {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .col-my-photo {
+    width: 50%;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+
+  .col-whoami {
+    width: 50%;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-aspect-ratio: 5/6) {
+  .col-intro {
+    display: inline-block !important;
+  }
+
+  .col-my-photo {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .col-whoami {
+    width: 75%;
+    max-width: 75%;
+    flex-basis: 75%;
+    margin: 0 auto;
   }
 }
