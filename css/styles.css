@@ -12,7 +12,9 @@ a:hover {
   color: #f0ad4e;
 }
 
-/*Navbar elements*/
+/*
+* Navbar elements
+*/
 
 .nav-row,
 .dropdown-menu,
@@ -63,14 +65,10 @@ a:hover {
   background-color: rgba(239, 239, 239, 0.7);
 }
 
-/*Content section*/
-
-.main-row {
-  /*height: calc(100vh - 3.5rem);*/
-}
-
-/*Side panel elements:
-userpic and intro*/
+/*
+* Side panel elements:
+* userpic and intro
+*/
 
 .userpic {
   max-width: 50%;
@@ -84,7 +82,9 @@ h2 {
   font: 1rem "Montserrat", sans-serif;
 }
 
-/*Featured Projects section*/
+/*
+* Featured Projects section
+*/
 
 @media screen and (orientation: landscape) {
   .featured-column {
@@ -103,7 +103,9 @@ h3 {
 
 }
 
-/*Web and Android tabs*/
+/*
+* Web and Android tabs
+*/
 
 #android-web-tabs {
   width: 100%;
@@ -127,7 +129,9 @@ h3 {
   border-bottom: none;
 }
 
-/*Tabs and carousels*/
+/*
+* Tabs and carousels
+*/
 
 .tab-content {
   background-color: rgba(239, 239, 239, 0.25);
@@ -135,6 +139,8 @@ h3 {
   height: 90%;
   width: 100%;
 }
+
+/* For correct sizing in IE */
 
 .carousel,
 .carousel-inner,
@@ -198,6 +204,8 @@ h3 {
   animation: description-overlay 4s ease forwards;
 }
 
+/* No animation on xs screens */
+
 @media screen and (max-width: 576px) {
   .card-img-overlay {
     position: relative;
@@ -232,6 +240,10 @@ h3 {
   font: 200 1rem "Montserrat", sans-serif;
   color: #555;
   line-height: 2rem;
+}
+
+.modal-pic:hover {
+  box-shadow: 2px 2px 15px 1px #555;
 }
 
 /*On a light background, the "fill" parameter for arrows and appearance of indicators should be altered to make them visible. See node_modules/bootstrap/dist/css/bootstrp.css lines 5977 and 5981.*/
