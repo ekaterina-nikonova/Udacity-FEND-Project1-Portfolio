@@ -73,3 +73,11 @@ html {
     margin: 0 auto;
   }
 }
+
+/* Pictures in modals shouldn't be too tall on horizontal displays */
+
+@media screen and (orientation: landscape) {
+  .modal-pic {
+    max-height: 33vh;
+  }
+}
