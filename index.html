@@ -13,131 +13,129 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row nav-row">
-        <nav class="navbar sticky-top navbar-toggleable-sm navbar-inverse w-100">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="navbar-brand">
-            <a href="index.html" class="d-block my-auto site-icon"><span class="fa fa-home"></span></a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown mr-2 about-menu">
-                <a  class="nav-link dropdown-toggle" href="#" id="navbarDdMenuLinkAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDdMenuLinkAbout">
-                  <a class="dropdown-item" href="about-me.html">About me</a>
-                  <a class="dropdown-item" href="about-site.html">About this site</a>
-                </div>
-              </li>
-
-              <!-- "Contact me" dropdown and contact form -->
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDdMenuLinkContact" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact me</a>
-                <div class="dropdown-menu px-2 mb-2 contact-form" aria-labelledby="navbarDdMenuLinkContact">
-                  <form>
-                    <div class="form-group">
-                      <label class="sr-only" for="sender-name">Your name</label>
-                      <div class="input-group">
-                        <div class="input-group-addon">
-                          <span class="fa fa-user-o"></span>
-                        </div>
-                        <input type="text" class="form-control" id="sender-name" placeholder="Your name">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="sr-only" for="email-address">Your email address</label>
-                      <div class="input-group">
-                        <div class="input-group-addon">
-                          <span class="fa fa-envelope-o"></span>
-                        </div>
-                        <input type="email" class="form-control" id="email-address" placeholder="Your email address">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="sr-only" for="msg-subject">Subject</label>
-                      <div class="input-group">
-                        <div class="input-group-addon">
-                          <span class="fa fa-question-circle-o"></span>
-                        </div>
-                        <input type="text" class="form-control" id="msg-subject" placeholder="Subject">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="sr-only" for="msg-text">Message</label>
-                      <div class="input-group">
-                        <div class="input-group-addon">
-                          <span class="fa fa-pencil-square-o"></span>
-                        </div>
-                        <textarea class="form-control" id="msg-text" rows="9" cols="80" placeholder="Message&hellip;"></textarea>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label id="fileHelp" class="sr-only" for="attach-file">Attach a file</label>
-                      <div class="input-group">
-                        <div class="input-group-addon py-1">
-                          <span class="fa fa-paperclip"></span>
-                        </div>
-                        <input type="file" class="form-control-file attach" id="attach-file" aria-describedby="fileHelp">
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-outline-warning">Send <span class="fa fa-arrow-circle-right"></span></button>
-                  </form>
-                </div>
-              </li>
-            </ul>
-
-            <!-- Search form and Download button -->
-
-            <form class="form-inline" action="index.html" method="post">
-              <div class="form-group">
-                <label class="sr-only" for="search-box">Search on this site</label>
-                <div class="input-group">
-                  <div class="input-group-addon">
-                    <span class="fa fa-search"></span>
-                  </div>
-                  <input class="form-control" id="search-box" type="text" name="Search" placeholder="e.g. Java or Git">
-                  <button class="btn btn-outline-warning mx-2" type="submit" name="Search"><span>Search</span></button>
-                </div>
+      <nav class="navbar navbar-toggleable-sm navbar-inverse w-100">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-brand">
+          <a href="index.html" class="d-block my-auto site-icon"><span class="fa fa-home"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown mr-2 about-menu">
+              <a  class="nav-link dropdown-toggle" href="#" id="navbarDdMenuLinkAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDdMenuLinkAbout">
+                <a class="dropdown-item" href="about-me.html">About me</a>
+                <a class="dropdown-item" href="about-site.html">About this site</a>
               </div>
-            </form>
-            <a id="download-resume" href="resume.pdf" class="btn btn-outline-warning my-md-auto my-sm-2" data-toggle="tooltip" data-placement="bottom" title="Download my r&eacute;sum&eacute;"><span class="fa fa-download" aria-hidden="true"></span></a>
-          </div>
-        </nav>
-      </div>
+            </li>
 
-      <!-- Main content of the page -->
+            <!-- "Contact me" dropdown and contact form -->
 
-      <div class="row main-row">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDdMenuLinkContact" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact me</a>
+              <div class="dropdown-menu px-2 mb-2 contact-form" aria-labelledby="navbarDdMenuLinkContact">
+                <form>
+                  <div class="form-group">
+                    <label class="sr-only" for="sender-name">Your name</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <span class="fa fa-user-o"></span>
+                      </div>
+                      <input type="text" class="form-control" id="sender-name" placeholder="Your name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email-address">Your email address</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <span class="fa fa-envelope-o"></span>
+                      </div>
+                      <input type="email" class="form-control" id="email-address" placeholder="Your email address">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="msg-subject">Subject</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <span class="fa fa-question-circle-o"></span>
+                      </div>
+                      <input type="text" class="form-control" id="msg-subject" placeholder="Subject">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="msg-text">Message</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <span class="fa fa-pencil-square-o"></span>
+                      </div>
+                      <textarea class="form-control" id="msg-text" rows="9" cols="80" placeholder="Message&hellip;"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label id="fileHelp" class="sr-only" for="attach-file">Attach a file</label>
+                    <div class="input-group">
+                      <div class="input-group-addon py-1">
+                        <span class="fa fa-paperclip"></span>
+                      </div>
+                      <input type="file" class="form-control-file attach" id="attach-file" aria-describedby="fileHelp">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-outline-warning">Send <span class="fa fa-arrow-circle-right"></span></button>
+                </form>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Search form and Download button -->
+
+          <form class="form-inline" action="index.html" method="post">
+            <div class="form-group">
+              <label class="sr-only" for="search-box">Search on this site</label>
+              <div class="input-group">
+                <div class="input-group-addon">
+                  <span class="fa fa-search"></span>
+                </div>
+                <input class="form-control" id="search-box" type="text" name="Search" placeholder="e.g. Java or Git">
+                <button class="btn btn-outline-warning mx-2" type="submit" name="Search"><span>Search</span></button>
+              </div>
+            </div>
+          </form>
+          <a id="download-resume" href="resume.pdf" class="btn btn-outline-warning my-md-auto my-sm-2" data-toggle="tooltip" data-placement="bottom" title="Download my r&eacute;sum&eacute;"><span class="fa fa-download" aria-hidden="true"></span></a>
+        </div>
+      </nav>
+
+      <!-- Content of the page -->
+
+      <div class="row content-row">
 
         <!-- Column with photo, intro and social icons -->
 
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 d-sm-flex d-lg-inline-block my-auto py-4 col-intro">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 my-auto col-my-photo">
-            <picture>
-              <source media="(max-width: 575px)" sizes="50vw" srcset="img/userpic-blue-150.jpg 150w, img/userpic-blue-300.jpg 300w">
-              <source media="(min-width: 576px)" sizes="25vw" srcset="img/userpic-blue-150.jpg 150w, img/userpic-blue-300.jpg 300w, img/userpic-theatre-500.jpeg 500w, img/userpic-theatre-700.jpeg 700w">
-              <img class="img-fluid d-block rounded-circle mx-auto my-4 userpic" src="img/userpic-blue-300.jpg" sizes="(max-width: 575px) 50vw, 25vw" srcset="img/userpic-blue-150.jpg 150w, img/userpic-blue-300.jpg 300w, img/userpic-theatre-500.jpeg 500w, img/userpic-theatre-700.jpeg 700w" alt="A photo of me">
-            </picture>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 my-auto col-whoami">
-            <h1 class="text-uppercase text-center">Ekaterina Nikonova</h1>
-            <h2 class="text-center lead">Android and web developer in Norway</h2>
-            <div class="nav mt-5 social-icons">
-              <a href="https://www.facebook.com/ekaterina.v.nikonova" class="social-button mx-auto" aria-label="Open my Facebook page"><span class="fa fa-facebook-official fa-2x" aria-hidden="true"></span></a>
-              <a href="https://www.linkedin.com/in/ekaterinanikonova/" class="social-button mx-auto" aria-label="Open my LinkedIn profile"><span class="fa fa-linkedin-square fa-2x" aria-hidden="true"></span></a>
-              <a href="https://github.com/ekaterina-nikonova" class="social-button mx-auto" aria-label="Open my GitHub profile"><span class="fa fa-github fa-2x" aria-hidden="true"></span></a>
-              <a href="https://www.instagram.com/ekaterina_v_nikonova/" class="social-button mx-auto" aria-label="Open my Instagram"><span class="fa fa-instagram fa-2x" aria-hidden="true"></span></a>
+        <header class="col-xs-12 col-sm-12 col-md-12 col-lg-4 d-sm-flex d-lg-inline-block my-auto py-4 col-intro">
+          <div class="row mx-auto">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 my-auto col-my-photo">
+              <picture>
+                <source media="(max-width: 999px), (min-width: 1000px) and (orientation: landscape)" sizes="(max-width: 575px) 50vw, 30vw" srcset="img/userpic-blue-150.jpg 150w, img/userpic-blue-300.jpg 300w">
+                <source media="(min-width: 1000px) and (orientation: portrait)" sizes="25vw" srcset="img/userpic-theatre-500.jpeg 500w, img/userpic-theatre-700.jpeg 700w">
+                <img class="img-fluid d-block rounded-circle mx-auto my-4 userpic" src="img/userpic-blue-300.jpg" sizes="(max-width: 575px) 50vw, 25vw" srcset="img/userpic-blue-150.jpg 150w, img/userpic-blue-300.jpg 300w, img/userpic-theatre-500.jpeg 500w, img/userpic-theatre-700.jpeg 700w" alt="A photo of me">
+              </picture>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12 my-auto col-whoami">
+              <h1 class="text-uppercase text-center">Ekaterina Nikonova</h1>
+              <h2 class="text-center lead">Android and web developer in Norway</h2>
+              <address class="nav mt-5 social-icons">
+                <a href="https://www.facebook.com/ekaterina.v.nikonova" class="social-button mx-auto" target="_blank" aria-label="Open my Facebook page"><span class="fa fa-facebook-official fa-2x" aria-hidden="true"></span></a>
+                <a href="https://www.linkedin.com/in/ekaterinanikonova/" class="social-button mx-auto" target="_blank" aria-label="Open my LinkedIn profile"><span class="fa fa-linkedin-square fa-2x" aria-hidden="true"></span></a>
+                <a href="https://github.com/ekaterina-nikonova" class="social-button mx-auto" target="_blank" aria-label="Open my GitHub profile"><span class="fa fa-github fa-2x" aria-hidden="true"></span></a>
+                <a href="https://www.instagram.com/ekaterina_v_nikonova/" class="social-button mx-auto" target="_blank" aria-label="Open my Instagram"><span class="fa fa-instagram fa-2x" aria-hidden="true"></span></a>
+              </address>
             </div>
           </div>
-        </div>
+        </header>
 
-        <!-- Column with carousels -->
+        <!-- Carousels -->
 
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 py-auto featured-column">
-          <div class="col-md-12 text-center pt-4 pb-2 featured-header">
-            <h3>Featured projects</h3>
-          </div>
-          <div class="row featured-panel" role="tabpanel">
+        <main class="col-xs-12 col-sm-12 col-md-12 col-lg-8 py-auto featured-column">
+          <h3 class="text-center pt-4 pb-2 featured-header">Featured projects</h3>
+          <div class="featured-panel" role="tabpanel">
             <ul class="nav" id="android-web-tabs" role="tablist">
               <li class="nav-item wa-tab"><a class="nav-link active wa-link" data-toggle="tab" href="#android" role="tab">Android</a></li>
               <li class="nav-item wa-tab"><a class="nav-link wa-link" data-toggle="tab" href="#web" role="tab">Web</a></li>
@@ -146,7 +144,7 @@
 
               <!-- Tab with Android carousel -->
 
-              <div class="tab-pane h-100 fade show active" id="android" role="tabpanel">
+              <section class="tab-pane h-100 fade show active" id="android" role="tabpanel">
                 <div id="android-carousel" class="carousel h-md-75 my-auto slide" data-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-target="#android-carousel" data-slide-to="0" class="active"></li>
@@ -221,11 +219,11 @@
                     <span class="sr-only">Next</span>
                   </a>
                 </div>
-              </div>
+              </section>
 
               <!-- Tab with Web carousel -->
 
-              <div class="tab-pane h-100 fade" id="web" role="tabpanel">
+              <section class="tab-pane h-100 fade" id="web" role="tabpanel">
                 <div id="web-carousel" class="carousel h-md-75 slide" data-ride="carousel" data-interval="8000">
                   <ol class="carousel-indicators">
                     <li data-target="#web-carousel" data-slide-to="0" class="active"></li>
@@ -300,10 +298,10 @@
                     <span class="sr-only">Next</span>
                   </a>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
-        </div>
+        </main>
       </div>
     </div>
 
@@ -316,10 +314,10 @@
             <h5 class="modal-title" id="mockpaint-modal-label">Mock Paint - Android app</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
-          <div class="modal-body d-flex flex-wrap">
+          <div class="modal-body">
             <div class="container">
-              <div class="row d-block">
-                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-android-pic">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 modal-android-pic">
                   <a href="#">
                     <picture>
                       <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/mobile-mockpaint-300.jpg 300w, img/mobile-mockpaint-500.jpg 500w, img/mobile-mockpaint-800.jpg 800w">
@@ -328,11 +326,11 @@
                     </picture>
                   </a>
                 </div>
-                <div class="modal-android-description">
+                <div class="col-xs-12 col-sm-8 modal-android-description">
                   <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this app</h6>
                   <p class="modal-body-text">Mock Paint is a graphic tool for Android developers. It allows you to create mockup graphic assets, such as icons and images, for your prototypes quickly and easily.</p>
                 </div>
-                <div class="modal-android-tools">
+                <div class="col-12 modal-android-tools">
                   <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
                   <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
                     <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Java</button>
@@ -359,10 +357,10 @@
             <h5 class="modal-title" id="advisor-modal-label">Career Advisor - Android app</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
-          <div class="modal-body d-flex flex-wrap">
+          <div class="modal-body">
             <div class="container">
-              <div class="row d-block">
-                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-android-pic">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 modal-android-pic">
                   <a href="#">
                     <picture>
                       <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/mobile-advisor-300.jpg 300w, img/mobile-advisor-500.jpg 500w, img/mobile-advisor-800.jpg 800w">
@@ -371,11 +369,11 @@
                     </picture>
                   </a>
                 </div>
-                <div class="modal-android-description">
+                <div class="col-xs-12 col-sm-8 modal-android-description">
                   <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this app</h6>
                   <p class="modal-body-text">Career Advisor scans job descriptions across numerous websites and finds online courses that match your desirable career path.</p>
                 </div>
-                <div class="modal-android-tools">
+                <div class="col-12 modal-android-tools">
                   <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
                   <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
                     <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Java</button>
@@ -402,10 +400,10 @@
             <h5 class="modal-title" id="hae-modal-label">H&AElig;&AElig;? - Android app</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
-          <div class="modal-body d-flex flex-wrap">
+          <div class="modal-body">
             <div class="container">
-              <div class="row d-block">
-                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-android-pic">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 modal-android-pic">
                   <a href="#">
                     <picture>
                       <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/mobile-hae-300.jpg 300w, img/mobile-hae-500.jpg 500w, img/mobile-hae-800.jpg 800w">
@@ -414,11 +412,11 @@
                     </picture>
                   </a>
                 </div>
-                <div class="modal-android-description">
+                <div class="col-xs-12- col-sm-8 modal-android-description">
                   <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this app</h6>
                   <p class="modal-body-text">This app helps language learners improve their pronunciation. Listen to the audio sample and repeat, and the app will tell you how much your utterance resembles the original.</p>
                 </div>
-                <div class="modal-android-tools">
+                <div class="col-12 modal-android-tools">
                   <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
                   <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
                     <button type="button" class="btn btn-sm btn-danger mx-2 my-2">Java</button>
@@ -448,10 +446,10 @@
             <h5 class="modal-title" id="resume-modal-label">Interactive online r&eacute;sum&eacute;</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
-          <div class="modal-body d-flex flex-wrap">
+          <div class="modal-body">
             <div class="container">
-              <div class="row d-block">
-                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-web-pic">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 my-auto modal-web-pic">
                   <a href="#">
                     <picture>
                       <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/site-resume-400.jpg 400w, img/site-resume-600.jpg 600w, img/site-resume-800.jpg 800w">
@@ -460,11 +458,11 @@
                     </picture>
                   </a>
                 </div>
-                <div class="modal-web-description">
+                <div class="col-xs-12 col-sm-8 modal-web-description">
                   <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this project</h6>
                   <p class="modal-body-text">An interactive online r&eacute;sum&eacute; built for the Udacity Front-End Web Development Nanodegree. It uses Google Maps to show my locations and Polymer 2.0 for custom components.</p>
                 </div>
-                <div class="modal-web-tools">
+                <div class="col-12 modal-web-tools">
                   <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
                   <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
                     <button type="button" class="btn btn-sm btn-danger mx-2 my-2">HTML5</button>
@@ -491,10 +489,10 @@
             <h5 class="modal-title" id="arcade-modal-label">Arcade game Frogger</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
-          <div class="modal-body d-flex flex-wrap">
+          <div class="modal-body">
             <div class="container">
-              <div class="row d-block">
-                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-web-pic">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 my-auto modal-web-pic">
                   <a href="#">
                     <picture>
                       <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/site-arcade-400.jpg 400w, img/site-arcade-600.jpg 600w, img/site-arcade-800.jpg 800w">
@@ -503,11 +501,11 @@
                     </picture>
                   </a>
                 </div>
-                <div class="modal-web-description">
+                <div class="col-xs-12 col-sm-8 modal-web-description">
                   <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this project</h6>
                   <p class="modal-body-text">A web version of a classic arcade game Frogger built for the Udacity Front-End Web Development Nanodegree. The <a href="https://github.com/udacity/frontend-nanodegree-arcade-game">game engine</a> provided by Udacity was customized, new levels and character were added.</p>
                 </div>
-                <div class="modal-web-tools">
+                <div class="col-12 modal-web-tools">
                   <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
                   <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
                     <button type="button" class="btn btn-sm btn-danger mx-2 my-2">HTML5</button>
@@ -534,10 +532,10 @@
             <h5 class="modal-title" id="testing-modal-label">Feed reader testing</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
-          <div class="modal-body d-flex flex-wrap">
+          <div class="modal-body">
             <div class="container">
-              <div class="row d-block">
-                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-web-pic">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 my-auto modal-web-pic">
                   <a href="#">
                     <picture>
                       <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/site-testing-400.jpg 400w, img/site-testing-600.jpg 600w, img/site-testing-800.jpg 800w">
@@ -546,11 +544,11 @@
                     </picture>
                   </a>
                 </div>
-                <div class="modal-web-description">
+                <div class="col-xs-12 col-sm-8 modal-web-description">
                   <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this project</h6>
                   <p class="modal-body-text">A test suite for a web-based application that reads RSS feeds. All tests are written using Jasmine framework.</p>
                 </div>
-                <div class="modal-web-tools">
+                <div class="col-12 modal-web-tools">
                   <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
                   <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
                     <button type="button" class="btn btn-sm btn-danger mx-2 my-2">HTML5</button>
@@ -576,10 +574,10 @@
             <h5 class="modal-title" id="health-modal-label">Online health tracker</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
-          <div class="modal-body d-flex flex-wrap">
+          <div class="modal-body">
             <div class="container">
-              <div class="row d-block">
-                <div class="col-xs-12 col-sm-4 img-fluid d-block mr-2 my-xs-1 my-md-4 float-left modal-web-pic">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 my-auto modal-web-pic">
                   <a href="#">
                     <picture>
                       <source media="(max-width: 767px) and (orientation: landscape)" sizes="75vh" srcset="img/site-health-400.jpg 400w, img/site-health-600.jpg 600w, img/site-health-800.jpg 800w">
@@ -588,11 +586,11 @@
                     </picture>
                   </a>
                 </div>
-                <div class="modal-web-description">
+                <div class="col-xs-12 col-sm-8 modal-web-description">
                   <h6 class="mt-2 mb-0 text-center text-md-right modal-body-text modal-body-header app-about">About this project</h6>
                   <p class="modal-body-text">A web app that helps you track daily calories and water intake. It also registers how many steps you have made daily, weekly or monthly and allows you to customize types of physical activity.</p>
                 </div>
-                <div class="modal-web-tools">
+                <div class="col-12 modal-web-tools">
                   <h6 class="mt-2 mb-0 text-center text-md-right text-right modal-body-text modal-body-header app-tools">Technologies and tools</h6>
                   <div class="d-flex flex-wrap tool-buttons" role="group" aria-label="Technologies and tools used in this project">
                     <button type="button" class="btn btn-sm btn-danger mx-2 my-2">HTML5</button>
